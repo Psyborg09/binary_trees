@@ -1,7 +1,8 @@
 #include "binary_trees.h"
 
+int binary_tree_is_perfect(const binary_tree_t *tree);
 int is_perfect_recursive(const binary_tree_t *tree,
-                size_t leaf_depth, size_t level);
+		size_t leaf_depth, size_t level);
 const binary_tree_t *get_leaf(const binary_tree_t *tree);
 size_t depth(const binary_tree_t *tree);
 unsigned char is_leaf(const binary_tree_t *node);
@@ -25,7 +26,7 @@ int binary_tree_is_perfect(const binary_tree_t *tree)
  *         node in a binary tree.
  * @tree: this is A pointer to the node to measure the depth of.
  *
- * Return: the function returns the depth of node.
+ * Return: The depth of node.
  */
 size_t depth(const binary_tree_t *tree)
 {
@@ -33,10 +34,10 @@ size_t depth(const binary_tree_t *tree)
 }
 
 /**
- * get_leaf - Returns a leaf of a binary tree.
+ * get_leaf - this Returns a leaf of a binary tree.
  * @tree: this is A pointer to the root node of the tree to find a leaf in.
  *
- * Return: the function returns a pointer to the first encountered leaf.
+ * Return: A pointer to the first encountered leaf.
  */
 const binary_tree_t *get_leaf(const binary_tree_t *tree)
 {
@@ -48,10 +49,10 @@ const binary_tree_t *get_leaf(const binary_tree_t *tree)
 /**
  * is_perfect_recursive - Checks if a binary tree is perfect recursively.
  * @tree: this is A pointer to the root node of the tree to check.
- * @leaf_depth: this is the depth of one leaf in the binary tree.
- * @level: this is the Level of current node.
+ * @leaf_depth: this is The depth of one leaf in the binary tree.
+ * @level: Level of current node.
  *
- * Return: returns 1, If the tree is perfect, otherwise 0.
+ * Return: 1 If the tree is perfect, otherwise 0.
  */
 int is_perfect_recursive(const binary_tree_t *tree,
 		size_t leaf_depth, size_t level)
@@ -68,7 +69,7 @@ int is_perfect_recursive(const binary_tree_t *tree,
  * is_leaf - Checks if a node is a leaf of a binary tree.
  * @node: this is A pointer to the node to check.
  *
- * Return: returns 1, If the node is a leaf, otherwise, 0.
+ * Return: 1 If the node is a leaf, otherwise, 0.
  */
 unsigned char is_leaf(const binary_tree_t *node)
 {
