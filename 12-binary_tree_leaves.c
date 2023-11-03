@@ -3,7 +3,7 @@
 /**
  * binary_tree_leaves - Counts the leaves in a binary tree.
  *
- * @tree: this is A pointer to the root node of the tree to count the 
+ * @tree: this is A pointer to the root node of the tree to count the
  * number of leaves.
  *
  * Return: this function returns 0 if tree is NULL.
